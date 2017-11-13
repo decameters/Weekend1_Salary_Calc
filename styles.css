@@ -1,0 +1,82 @@
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: gold;
+    color: deeppink;
+    margin: 20px;
+}
+
+#container {
+    width: 600px;
+    background-color: gold;
+    border: 2px dotted black;
+    margin: 20px;
+    padding-bottom: 20px;
+}
+.employeeInformationTable {
+    background-color: hotpink;
+    border: 0.5px solid black;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#submitButton {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: deeppink;
+    font-size: 16px;
+}
+
+#submitButton:hover {
+    background-color: lightpink;
+}
+
+.montlySalaryBox {
+    background-color: deeppink;
+    border: 0.5px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    float: right;
+    width: 180px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    padding: 6px;
+}
+
+.salaryCalculatorTable {
+    background-color: lightpink;
+    border: 0.5px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 560px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.salaryCalculatorTable tr:nth-child(even) {
+    background-color: hotpink;
+}
+
+.salaryCalculatorTable tr:nth-child(odd) {
+    background-color: deeppink;
+}
+
+.salaryCalculatorTable th {
+    background-color: lightpink;
+}
+
+.deleteButton {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightpink;
+    font-size: 10px;
+}
+
+.deleteButton:hover {
+    background-color: gold;
+}

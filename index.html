@@ -4,12 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Salary Calculator</title>
     <script src="jquery-3.2.1.min.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <h1>Monthly Cost Calculator</h1>
+    <div id = "container">
+    <table class = "employeeInformationTable">
+    <tbody>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" value = '' id="firstName"/></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" id="lastName"/></td>
+        </tr>
+        <tr>
+            <td>ID Number</td>
+            <td><input type="number" id="idNumber"/></td>
+        </tr>
+        <tr>
+            <td>Job Title</td>
+            <td><input type="text" id="jobTitle"/></td>
+        </tr>
+        <tr>
+            <td>Annual Salary</td>
+            <td><input type="number" id="annualSalary"/></td>
+        </tr>
+    </tbody>
+    </table>
+    <button id="submitButton">Submit Employee Information</button>
+    <div class = "montlySalaryBox">
+            Monthly Costs:
+            <p id = "monthlySalary"></p>
+        </div>
+    <table class = "salaryCalculatorTable">
+        <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>ID Number</th>
+            <th>Job Title</th>
+            <th>Annual Salary</th>
+            <th>Delete</th>
+        </thead>
+    </table>
+</div>
 </body>
 </html>
