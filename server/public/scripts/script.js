@@ -8,7 +8,7 @@ function readyNow() {
     // this clears the fields -- is it shady to have two functions on a button click??
     $('#submitButton').click(function(){
         $('input[type="text"]').val('');
-        $('input[type="number').val('');
+        $('input[type="number"]').val('');
     })
 };
 
@@ -33,11 +33,11 @@ function Employee(firstName, lastName, idNumber, jobTitle, annualSalary) {
     var totalMonthlySalary = parseInt(this.annualSalary / 12);
 
     monthlySalaryArray.push(totalMonthlySalary);
-    addToMonthlyCostBox();
+    addToMonthlyCostBox(monthlySalaryArray);
 
     // deletes Employee row
     $('.salaryCalculatorTable').on('click','.deleteButton', function() {
-        console.log('button clicked');
+        // console.log('button clicked');
         $(this).parent().parent().remove();
     });
 }
@@ -46,6 +46,17 @@ function Employee(firstName, lastName, idNumber, jobTitle, annualSalary) {
 Personally, I only partially understand why / how the reduce part works... the sumOfEachMonthlyPay
 part makes sense to me. the addToMonlyCostBox function is a little wild/weird...*/
 
+// function addToMonthlyCostBox(array){
+//     var totalSalaries = 0;
+//     for( var i = 0; i < array.length; i++ ){
+//         totalSalaries += Number(array[i].annualSalary);
+
+//         console.log(totalSalaries);
+        
+//     }
+// }
+
+// }
 function sumOfEachMonthlyPay(total, addEmployeePay) {
     return total + parseInt(addEmployeePay);
 }
